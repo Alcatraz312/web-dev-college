@@ -1,0 +1,28 @@
+h1 {
+    
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: aliceblue;
+  }
+
+html {
+    background-color: black;
+  }
+
+#shacks {
+
+    margin-top: 100px;
+    margin-left: 25%;
+    height: 400px;
+    width: 50%;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+img {
+    border: 10px solid wheat;
+    width: 100%;
+    
+}
