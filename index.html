@@ -1,15 +1,116 @@
-<ul>
-    <li>A</li>
-    <li>B
-        <ol>
-            <li>h</li>
-            <li> choochies
-                <ol>
-                    <li>ok</li>
-                </ol>
-            </li>
-            <li draggable="true">yes</li> <!--this element is draggable on the website now-->
-        </ol>
-    </li>
-</ul>
-<!-- yesseseseses -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table Example</title>
+
+<style>
+    body{
+        background:#d9d9d9;
+        font-family: serif;
+        text-align:center;
+    }
+
+    h2{
+        color:blue;
+    }
+
+    table{
+        margin:auto;
+        border-collapse:separate;
+        border-spacing:6px;
+        background:#666;
+        padding:10px;
+        box-shadow:6px 6px 0px #444;
+    }
+
+    th, td{
+        border:2px solid blue;
+        padding:10px 15px;
+        background:#cfcfcf;
+    }
+
+    .yellow{
+        background:yellow;
+        font-weight:bold;
+    }
+</style>
+
+</head>
+
+<body>
+
+<h2>Table Example</h2>
+<hr style="height:6px;background:brown;border:none;width:80%;">
+
+<table>
+
+<!-- Top Heading -->
+<tr>
+    <th colspan="4" class="yellow">Seminar</th>
+</tr>
+
+<!-- Header Row -->
+<tr>
+    <th rowspan="2" class="yellow">Day</th>
+    <th colspan="2" class="yellow">Schedule</th>
+    <th rowspan="2" class="yellow">Topic</th>
+</tr>
+
+<tr>
+    <th class="yellow">Start Time</th>
+    <th class="yellow">End Time</th>
+</tr>
+
+<!-- Monday -->
+<tr>
+    <td rowspan="2">Monday</td>
+    <td rowspan="2">8:00 AM</td>
+    <td rowspan="2">5:00 PM</td>
+    <td>Introduction to HTML</td>
+</tr>
+<tr>
+    <td>Important HTML Tags</td>
+</tr>
+
+<!-- Tuesday -->
+<tr>
+    <td rowspan="3">Tuesday</td>
+    <td>8:00 AM</td>
+    <td>11:00 AM</td>
+    <td rowspan="2">CSS-1</td>
+</tr>
+<tr>
+    <td>11:00 AM</td>
+    <td>2:00 PM</td>
+</tr>
+<tr>
+    <td>2:00 PM</td>
+    <td>5:00 PM</td>
+    <td>JavaScript-1</td>
+</tr>
+
+<!-- Wednesday -->
+<tr>
+    <td>Wednesday</td>
+    <td>8:00 AM</td>
+    <td>12 Noon</td>
+    <td>JavaScript-2</td>
+</tr>
+
+<!-- Thursday -->
+<tr>
+    <td rowspan="2">Thursday</td>
+    <td>8:00 AM</td>
+    <td>12 Noon</td>
+    <td>JQuery</td>
+</tr>
+<tr>
+    <td>1:00 PM</td>
+    <td>3:00 PM</td>
+    <td>Valedictory</td>
+</tr>
+
+</table>
+
+</body>
+</html>
