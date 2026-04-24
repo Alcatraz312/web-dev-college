@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Food Court</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f3e8;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #b5451b;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      padding: 6px 10px;
+    }
+
+    nav a:hover {
+      background-color: #e05c28;
+      border-radius: 4px;
+    }
+
+    /* Dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-btn {
+      color: white;
+      background: none;
+      border: none;
+      font-size: 15px;
+      cursor: pointer;
+      padding: 6px 10px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      display: block;
+      color: #333;
+      padding: 10px 14px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f2ddd5;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Header / Image */
+    .header {
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+
+    .header h1 {
+      color: #b5451b;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .header img {
+      width: 80%;
+      max-width: 700px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 3px solid #b5451b;
+    }
+
+    /* Content */
+    .content {
+      padding: 20px 40px;
+    }
+
+    /* Links */
+    .links-section {
+      margin: 20px 0;
+    }
+
+    .links-section h2 {
+      color: #b5451b;
+    }
+
+    .links-section a {
+      display: inline-block;
+      margin: 6px 8px 6px 0;
+      padding: 8px 16px;
+      background-color: #b5451b;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .links-section a:hover {
+      background-color: #e05c28;
+    }
+
+    /* Table */
+    .menu-section h2 {
+      color: #b5451b;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      background-color: white;
+    }
+
+    th {
+      background-color: #b5451b;
+      color: white;
+      padding: 10px;
+      text-align: left;
+    }
+
+    td {
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9e8df;
+    }
+
+    tr:hover {
+      background-color: #f2cfc0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #b5451b;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+
+    <!-- Dropdown Menu -->
+    <div class="dropdown">
+      <button class="dropdown-btn">Cuisines &#9660;</button>
+      <div class="dropdown-content">
+        <a href="#">Indian</a>
+        <a href="#">Chinese</a>
+        <a href="#">Italian</a>
+        <a href="#">Mexican</a>
+        <a href="#">American</a>
+      </div>
+    </div>
+
+    <a href="#links">Contact</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <!-- Image Section -->
+  <div class="header" id="home">
+    <h1>Welcome to The Grand Food Court</h1>
+    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80" alt="Food Court" />
+    <p>Explore a variety of cuisines all under one roof!</p>
+  </div>
+
+  <div class="content">
+
+    <!-- Links Section -->
+    <div class="links-section" id="links">
+      <h2>Quick Links</h2>
+      <a href="https://www.zomato.com" target="_blank">Order on Zomato</a>
+      <a href="https://www.swiggy.com" target="_blank">Order on Swiggy</a>
+      <a href="https://maps.google.com" target="_blank">Get Directions</a>
+      <a href="mailto:food@grandcourt.com">Email Us</a>
+      <a href="tel:+911234567890">Call Us</a>
+    </div>
+
+    <!-- Table Section -->
+    <div class="menu-section" id="menu">
+      <h2>Our Menu</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Dish Name</th>
+            <th>Cuisine</th>
+            <th>Price</th>
+            <th>Type</th>
+            <th>Available</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chicken Biryani</td>
+            <td>Indian</td>
+            <td>Rs. 280</td>
+            <td>Non-Veg</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Margherita Pizza</td>
+            <td>Italian</td>
+            <td>Rs. 320</td>
+            <td>Veg</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Veg Fried Rice</td>
+            <td>Chinese</td>
+            <td>Rs. 180</td>
+            <td>Veg</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Beef Tacos</td>
+            <td>Mexican</td>
+            <td>Rs. 250</td>
+            <td>Non-Veg</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Smash Burger</td>
+            <td>American</td>
+            <td>Rs. 350</td>
+            <td>Non-Veg</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Paneer Tikka</td>
+            <td>Indian</td>
+            <td>Rs. 220</td>
+            <td>Veg</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer id="about">
+    <p>The Grand Food Court - Open Daily 10am to 11pm</p>
+    <p>&copy; 2026 All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
