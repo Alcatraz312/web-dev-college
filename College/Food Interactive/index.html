@@ -93,20 +93,62 @@
       border: 3px solid #b5451b;
     }
 
+    .header p {
+      font-size: 16px;
+      color: #555;
+      margin-top: 10px;
+    }
+
     /* Content */
     .content {
       padding: 20px 40px;
     }
 
-    /* Links */
-    .links-section {
-      margin: 20px 0;
-    }
-
-    .links-section h2 {
+    /* Section headings */
+    h2 {
       color: #b5451b;
+      border-bottom: 2px solid #b5451b;
+      padding-bottom: 6px;
+      margin-top: 40px;
     }
 
+    /* About Section */
+    .about-section p {
+      font-size: 15px;
+      color: #444;
+      line-height: 1.8;
+      margin: 10px 0;
+    }
+
+    .about-boxes {
+      display: flex;
+      gap: 20px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+
+    .about-box {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-left: 4px solid #b5451b;
+      padding: 16px 20px;
+      flex: 1;
+      min-width: 200px;
+      border-radius: 4px;
+    }
+
+    .about-box h3 {
+      color: #b5451b;
+      margin-bottom: 6px;
+    }
+
+    .about-box p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* Links */
     .links-section a {
       display: inline-block;
       margin: 6px 8px 6px 0;
@@ -123,10 +165,6 @@
     }
 
     /* Table */
-    .menu-section h2 {
-      color: #b5451b;
-    }
-
     table {
       width: 100%;
       border-collapse: collapse;
@@ -154,14 +192,103 @@
       background-color: #f2cfc0;
     }
 
+    /* Timings table */
+    .timings-table {
+      width: 50%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      background-color: white;
+    }
+
+    .timings-table th {
+      background-color: #b5451b;
+      color: white;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .timings-table td {
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .timings-table tr:nth-child(even) {
+      background-color: #f9e8df;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      margin-top: 10px;
+    }
+
+    .contact-grid {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    .contact-box {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-top: 4px solid #b5451b;
+      padding: 20px;
+      flex: 1;
+      min-width: 200px;
+      border-radius: 4px;
+    }
+
+    .contact-box h3 {
+      color: #b5451b;
+      margin-bottom: 10px;
+    }
+
+    .contact-box p {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.9;
+      margin: 0;
+    }
+
+    .contact-box a {
+      color: #b5451b;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    /* Map placeholder */
+    .map-box {
+      margin-top: 20px;
+      background-color: #e8e0d5;
+      border: 2px dashed #b5451b;
+      border-radius: 6px;
+      padding: 30px;
+      text-align: center;
+      color: #777;
+      font-size: 15px;
+    }
+
     /* Footer */
     footer {
       background-color: #b5451b;
       color: white;
       text-align: center;
-      padding: 14px;
-      margin-top: 30px;
+      padding: 18px;
+      margin-top: 40px;
       font-size: 14px;
+      line-height: 1.8;
+    }
+
+    footer a {
+      color: #ffd8c8;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -184,37 +311,94 @@
       </div>
     </div>
 
-    <a href="#links">Contact</a>
     <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <!-- Image Section -->
+  <!-- Home / Image Section -->
   <div class="header" id="home">
     <h1>Welcome to The Grand Food Court</h1>
     <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80" alt="Food Court" />
     <p>Explore a variety of cuisines all under one roof!</p>
+    <p>Located in the heart of the city, we bring you the best food experience from around the world.</p>
   </div>
 
   <div class="content">
 
-    <!-- Links Section -->
-    <div class="links-section" id="links">
-      <h2>Quick Links</h2>
-      <a href="https://www.zomato.com" target="_blank">Order on Zomato</a>
-      <a href="https://www.swiggy.com" target="_blank">Order on Swiggy</a>
-      <a href="https://maps.google.com" target="_blank">Get Directions</a>
-      <a href="mailto:food@grandcourt.com">Email Us</a>
-      <a href="tel:+911234567890">Call Us</a>
+    <!-- About Section -->
+    <div class="about-section" id="about">
+      <h2>About Us</h2>
+      <p>
+        The Grand Food Court was established in 2010 with a simple vision — to bring the best cuisines
+        from around the world to one convenient and comfortable location. Over the years, we have grown
+        into one of the most popular dining destinations in the city, hosting over 20 restaurants and
+        serving thousands of happy customers every day.
+      </p>
+      <p>
+        Whether you are looking for a quick bite during lunch, a family dinner, or a casual outing with
+        friends, The Grand Food Court has something for everyone. Our food court is designed to be
+        spacious, clean, and welcoming for all age groups.
+      </p>
+
+      <div class="about-boxes">
+        <div class="about-box">
+          <h3>Our Mission</h3>
+          <p>To provide a diverse and high-quality dining experience in a clean, friendly, and affordable environment for everyone.</p>
+        </div>
+        <div class="about-box">
+          <h3>Why Choose Us?</h3>
+          <p>20+ restaurants, ample seating, free Wi-Fi, kid-friendly zones, and a clean food-safe environment — all under one roof.</p>
+        </div>
+        <div class="about-box">
+          <h3>Our Story</h3>
+          <p>Started by a group of food lovers in 2010, we have grown from 5 stalls to a full-scale food court with restaurants from 10+ countries.</p>
+        </div>
+      </div>
+
+      <h2>Opening Hours</h2>
+      <table class="timings-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Opening Time</th>
+            <th>Closing Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday - Friday</td>
+            <td>10:00 AM</td>
+            <td>11:00 PM</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>9:00 AM</td>
+            <td>12:00 Midnight</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>9:00 AM</td>
+            <td>11:30 PM</td>
+          </tr>
+          <tr>
+            <td>Public Holidays</td>
+            <td>10:00 AM</td>
+            <td>10:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    <!-- Table Section -->
-    <div class="menu-section" id="menu">
+    <!-- Menu / Table Section -->
+    <div id="menu">
       <h2>Our Menu</h2>
+      <p style="color:#555; font-size:15px;">Below is a list of our featured dishes available today across different restaurants in the food court.</p>
       <table>
         <thead>
           <tr>
             <th>Dish Name</th>
             <th>Cuisine</th>
+            <th>Restaurant</th>
             <th>Price</th>
             <th>Type</th>
             <th>Available</th>
@@ -224,6 +408,7 @@
           <tr>
             <td>Chicken Biryani</td>
             <td>Indian</td>
+            <td>Spice Route</td>
             <td>Rs. 280</td>
             <td>Non-Veg</td>
             <td>Yes</td>
@@ -231,6 +416,7 @@
           <tr>
             <td>Margherita Pizza</td>
             <td>Italian</td>
+            <td>Forno Vivo</td>
             <td>Rs. 320</td>
             <td>Veg</td>
             <td>Yes</td>
@@ -238,13 +424,15 @@
           <tr>
             <td>Veg Fried Rice</td>
             <td>Chinese</td>
+            <td>Dragon Wok</td>
             <td>Rs. 180</td>
             <td>Veg</td>
             <td>Yes</td>
           </tr>
           <tr>
-            <td>Beef Tacos</td>
+            <td>Tacos (3 pcs)</td>
             <td>Mexican</td>
+            <td>El Taco Loco</td>
             <td>Rs. 250</td>
             <td>Non-Veg</td>
             <td>No</td>
@@ -252,6 +440,7 @@
           <tr>
             <td>Smash Burger</td>
             <td>American</td>
+            <td>Grillhouse 47</td>
             <td>Rs. 350</td>
             <td>Non-Veg</td>
             <td>Yes</td>
@@ -259,7 +448,24 @@
           <tr>
             <td>Paneer Tikka</td>
             <td>Indian</td>
+            <td>Spice Route</td>
             <td>Rs. 220</td>
+            <td>Veg</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Sushi Platter</td>
+            <td>Japanese</td>
+            <td>Sakura Bowl</td>
+            <td>Rs. 450</td>
+            <td>Non-Veg</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Falafel Wrap</td>
+            <td>Middle Eastern</td>
+            <td>Beirut Bites</td>
+            <td>Rs. 210</td>
             <td>Veg</td>
             <td>Yes</td>
           </tr>
@@ -267,12 +473,56 @@
       </table>
     </div>
 
+    <!-- Quick Links -->
+    <div class="links-section" id="links">
+      <h2>Order Online</h2>
+      <p style="color:#555; font-size:15px;">You can also order your favourite dishes online through our delivery partners.</p>
+      <a href="https://www.zomato.com" target="_blank">Order on Zomato</a>
+      <a href="https://www.swiggy.com" target="_blank">Order on Swiggy</a>
+      <a href="https://maps.google.com" target="_blank">Get Directions</a>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section" id="contact">
+      <h2>Contact Us</h2>
+      <p style="color:#555; font-size:15px;">We would love to hear from you! Reach out to us through any of the following channels.</p>
+
+      <div class="contact-grid">
+
+        <div class="contact-box">
+          <h3>Address</h3>
+          <p>
+            The Grand Food Court<br>
+            Level 2 and 3, Pavilion Mall<br>
+            MG Road, Near City Center<br>
+            New Delhi - 110001<br>
+            India
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <h3>Phone</h3>
+          <p>
+            Main Reception: <a href="tel:+911234567890">+91 12345 67890</a><br>
+            Booking & Reservations: <a href="tel:+911234567891">+91 12345 67891</a><br>
+            Feedback & Complaints: <a href="tel:+911234567892">+91 12345 67892</a><br>
+            Toll Free: <a href="tel:18001234567">1800 123 4567</a>
+          </p>
+        </div>
+
+      
+      </div>
+
+    </div>
+
   </div>
 
   <!-- Footer -->
-  <footer id="about">
-    <p>The Grand Food Court - Open Daily 10am to 11pm</p>
-    <p>&copy; 2026 All Rights Reserved</p>
+  <footer>
+    <p><strong>The Grand Food Court</strong> — Level 2 &amp; 3, Pavilion Mall, MG Road, New Delhi - 110001</p>
+    <p>Phone: <a href="tel:+911234567890">+91 12345 67890</a> &nbsp;|&nbsp; Email: <a href="mailto:info@grandfoodcourt.com">info@grandfoodcourt.com</a></p>
+    <p>Open Daily: Mon-Fri 10am-11pm &nbsp;|&nbsp; Sat-Sun 9am-12am</p>
+    <p>&copy; 2026 The Grand Food Court. All Rights Reserved.</p>
   </footer>
 
 </body>
