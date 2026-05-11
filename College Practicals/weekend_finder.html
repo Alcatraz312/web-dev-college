@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weekend Checker</title>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+
+        $(document).ready(function() {
+
+            $("#checkBtn").click(function() {
+
+                let inputDate = $("#date").val();
+
+                let date = new Date(inputDate);
+
+                let day = date.getDay();
+
+                // Sunday = 0, Saturday = 6
+                if(day == 0 || day == 6) {
+
+                    alert("The selected date is a Weekend.");
+
+                }
+                else {
+
+                    alert("The selected date is a Weekday.");
+
+                }
+
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <h1>Weekend Checker</h1>
+
+    <label>Select Date:</label>
+
+    <input type="date" id="date">
+
+    <br><br>
+
+    <button id="checkBtn">Check</button>
+
+</body>
+</html>

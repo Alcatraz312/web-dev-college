@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Text Change</title>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+
+        $(document).ready(function() {
+
+            $("#changeBtn").click(function() {
+
+                $("#text").css("color", "red");
+
+                $("#text").html("Text content has been changed using jQuery!");
+
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <h1 id="text">Welcome to jQuery Practical</h1>
+
+    <button id="changeBtn">Change Text</button>
+
+</body>
+</html>
