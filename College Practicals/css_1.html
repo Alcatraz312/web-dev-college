@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Department Webpage</title>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background-color: #f0f8ff;
+            margin: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background-color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: orange;
+        }
+
+        /* Dropdown */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: lightgray;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Section */
+        .content {
+            padding: 20px;
+        }
+
+        #welcome {
+            color: darkblue;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Computer Science Department</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li class="dropdown">
+
+                <a href="#">Faculty</a>
+
+                <div class="dropdown-content">
+                    <a href="#">Teaching Staff</a>
+                    <a href="#">Lab Staff</a>
+                </div>
+
+            </li>
+
+            <li class="dropdown">
+
+                <a href="#">Courses</a>
+
+                <div class="dropdown-content">
+                    <a href="#">BCA</a>
+                    <a href="#">MCA</a>
+                    <a href="#">BTech</a>
+                </div>
+
+            </li>
+
+            <li class="dropdown">
+
+                <a href="#">Activities</a>
+
+                <div class="dropdown-content">
+                    <a href="#">Seminars</a>
+                    <a href="#">Workshops</a>
+                    <a href="#">Sports</a>
+                </div>
+
+            </li>
+
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <h2 id="welcome">Welcome to Our Department</h2>
+
+        <p>
+            The Computer Science Department provides quality education
+            in programming, software development and research.
+        </p>
+
+        <p class="highlight">
+            Admissions are open for 2026.
+        </p>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Computer Science Department</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+
+    <script>
+
+        function add() {
+
+            let a = parseFloat(document.getElementById("num1").value);
+            let b = parseFloat(document.getElementById("num2").value);
+
+            alert("Addition = " + (a + b));
+        }
+
+        function subtract() {
+
+            let a = parseFloat(document.getElementById("num1").value);
+            let b = parseFloat(document.getElementById("num2").value);
+
+            alert("Subtraction = " + (a - b));
+        }
+
+        function multiply() {
+
+            let a = parseFloat(document.getElementById("num1").value);
+            let b = parseFloat(document.getElementById("num2").value);
+
+            alert("Multiplication = " + (a * b));
+        }
+
+        function divide() {
+
+            let a = parseFloat(document.getElementById("num1").value);
+            let b = parseFloat(document.getElementById("num2").value);
+
+            alert("Division = " + (a / b));
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h1>Simple Calculator</h1>
+
+    <label>First Number:</label>
+
+    <input type="text" id="num1">
+
+    <br><br>
+
+    <label>Second Number:</label>
+
+    <input type="text" id="num2">
+
+    <br><br>
+
+    <!-- Buttons -->
+    <button onclick="add()"> + </button>
+
+    <button onclick="subtract()"> - </button>
+
+    <button onclick="multiply()"> * </button>
+
+    <button onclick="divide()"> / </button>
+
+</body>
+</html>

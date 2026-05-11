@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Selectors</title>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+
+        $(document).ready(function() {
+
+            // ID Selector
+            $("#idBtn").click(function() {
+
+                $("#heading").css("color", "blue");
+
+            });
+
+            // Class Selector
+            $("#classBtn").click(function() {
+
+                $(".para").css("background-color", "yellow");
+
+            });
+
+            // Element Selector
+            $("#elementBtn").click(function() {
+
+                $("h2").hide();
+
+            });
+
+            // Attribute Selector
+            $("#attributeBtn").click(function() {
+
+                $("input[type='text']").css("border", "3px solid red");
+
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <h1 id="heading">jQuery Selectors Example</h1>
+
+    <p class="para">Paragraph 1</p>
+
+    <p class="para">Paragraph 2</p>
+
+    <h2>This is a heading element</h2>
+
+    <input type="text" placeholder="Enter Name">
+
+    <br><br>
+
+    <button id="idBtn">ID Selector</button>
+
+    <button id="classBtn">Class Selector</button>
+
+    <button id="elementBtn">Element Selector</button>
+
+    <button id="attributeBtn">Attribute Selector</button>
+
+</body>
+</html>
